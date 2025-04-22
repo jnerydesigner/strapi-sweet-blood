@@ -19,7 +19,11 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
     },
     "email": {
       "type": "string"
@@ -29,6 +33,18 @@
       "relation": "oneToMany",
       "target": "api::article.article",
       "mappedBy": "author"
+    },
+    "social_media": {
+      "type": "json"
+    },
+    "especialty": {
+      "type": "richtext"
+    },
+    "specialty_title": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "text"
     }
   }
 }
