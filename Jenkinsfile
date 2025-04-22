@@ -12,13 +12,6 @@ pipeline {
                 }
             }
         }
-        stage('BInstall Global Strapi') {
-            steps {
-                script {
-                    sh 'npm install -g strapi@latest'
-                }
-            }
-        }
         stage('Build StrapiCMS Blood Sweet') {
             steps {
                 script {
