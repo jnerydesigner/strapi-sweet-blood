@@ -31,5 +31,12 @@ pipeline {
                 }
             }
         }
+        stage('PM2 Start') {
+            steps {
+                script {
+                    sh 'pm2 start ecosystem.json'
+                }
+            }
+        }
     }
-}
+}pm2 start ecosystem.json
