@@ -12,10 +12,15 @@ pipeline {
                 }
             }
         }
+        stage('Install Dependencies') {
+            steps {
+                sh 'yarn install'
+            }
+        }
         stage('Build StrapiCMS Blood Sweet') {
             steps {
                 script {
-                    sh 'yarn dev'
+                    sh 'yarn build'
                 }
             }
         }
