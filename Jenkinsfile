@@ -15,7 +15,7 @@ pipeline {
         stage('Build StrapiCMS Blood Sweet') {
             steps {
                 script {
-                    sh 'yarn build'
+                    sh 'yarn dev'
                 }
             }
         }
