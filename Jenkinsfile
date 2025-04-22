@@ -27,7 +27,7 @@ pipeline {
         stage('Verify PM2') {
             steps {
                 script {
-                    sh 'pm2 status'
+                    sh 'npm install pm2 -g && pm2 status'
                 }
             }
         }
