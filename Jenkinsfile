@@ -3,6 +3,11 @@ pipeline {
     tools {
         nodejs 'NodeJS_22'
     }
+     environment {
+        POSTGRES_USER     = credentials('DATABASE_USERNAME')
+        POSTGRES_PASSWORD = credentials('DATABASE_PASSWORD')
+        POSTGRES_DB       = credentials('DATABASE_NAME')
+    }
     stages {
         stage('Check Node Version') {
             steps {
