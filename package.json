@@ -22,7 +22,7 @@
     "@strapi/strapi": "5.12.3",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
-    "nodemailer": "^6.10.1",
+    "nodemailer": "^7.0.11",
     "pg": "8.8.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
